@@ -16,6 +16,7 @@
         "element-plus": "^2.3.6",
         "mitt": "^3.0.0",
         "moment": "^2.29.4",
+        "query-string": "^8.1.0",
         "vue": "^3.3.4"
     }
 }
