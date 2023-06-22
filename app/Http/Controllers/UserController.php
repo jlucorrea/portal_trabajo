@@ -2,24 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Resources\UserCollection;
 
-class LoginController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('login.login');
+		
+    }
+
+	public function records()
+    {
+        $records = User::get();
+		
+        return new UserCollection($records);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function login(Request $request)
+    public function create()
     {
-        dd($request->all());
+        //
     }
 
     /**
