@@ -1,35 +1,10 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
-/* CSS ICON */
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-.b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: solid rgba(0, 0, 0, 0.15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
+/* ICON NAVBAR */
+.nav-size {
+	font-size: 20px;
+    text-align: center;
 }
 
 .bi {
@@ -37,43 +12,83 @@
     fill: currentColor;
 }
 
-.nav-scroller {
+/* SECTION JOB */
+
+#featured .job-featured {
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 4px;
+    border-left: 4px solid transparent;
+    box-shadow: 0px 0px 14px rgba(191, 191, 191, 0.24);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+#featured .job-featured .icon {
+    float: left;
     position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
+    width: 70px;
     text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0px 0px 7px rgba(203, 203, 203, 0.23);
+}
+#featured .job-featured .content {
+    padding-left: 90px;
+}
+#featured .job-featured .content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#featured .job-featured .content h3 a {
+    color: #333;
+}
+#featured .job-featured .content h3 a:hover {
+    color: #26ae61;
+}
+#featured .job-featured .content .brand {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #666666;
+}
+#featured .job-featured .content .tags {
+    margin-bottom: 15px;
+}
+#featured .job-featured .content .tags span {
+    margin-right: 10px;
+}
+#featured .job-featured .content .tags span i {
+    margin-right: 5px;
+    color: #26ae61;
+}
+#featured .job-featured:hover {
+    border-color: #26ae61;
 }
 
-.btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
-}
-.bd-mode-toggle {
-    z-index: 1500;
+.full-time {
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
- /* END CSS ICON */
+.full-time {
+    color: #26ae61;
+    background: #d5ffe7;
+}
 
+.full-time:hover {
+    box-shadow: 0px 3px 9px rgba(96, 94, 94, 0.17);
+}
+
+/* END SECTION JOB */

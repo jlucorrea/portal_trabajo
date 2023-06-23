@@ -1,4 +1,3 @@
-@include('layouts.icon')
 <header>
     <div class="px-3 py-2 text-bg-dark border-bottom">
         <div class="container">
@@ -12,9 +11,7 @@
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
 						<li>
 							<a href="{{ url('/') }}" class="nav-link text-white">
-								<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-									<use xlink:href="#home"></use>
-								</svg>
+								<i class="fas fa-briefcase bi d-block mx-auto mb-2 nav-size"></i>
 								Publicaciones
 							</a>
 						</li>
@@ -22,9 +19,7 @@
 						<li>
 							@if (Route::has('login'))
 								<a href="{{ route('login') }}" class="nav-link text-white">
-									<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-										<use xlink:href="#people-circle"></use>
-									</svg>
+									<i class="fas fa-sign-in-alt bi d-block mx-auto mb-2 nav-size"></i>
 									Iniciar Sesión
 								</a>
 							@endif
@@ -32,9 +27,7 @@
 						<li>
 							@if (Route::has('register'))
 								<a href="{{ route('register') }}" class="nav-link text-white">
-									<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-										<use xlink:href="#people-circle"></use>
-									</svg>
+									<i class="fas fa-user-circle bi d-block mx-auto mb-2 nav-size"></i>
 									Registrarse
 								</a>
 							@endif
@@ -42,17 +35,13 @@
 					@else
 						<li>
 							<a href="{{ route('home') }}" class="nav-link text-white">
-								<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-									<use xlink:href="#speedometer2"></use>
-								</svg>
+								<i class="fas fa-home bi d-block mx-auto mb-2 nav-size"></i>
 								Inicio
 							</a>
 						</li>
 						<li>
 							<a href="{{ route('jobs') }}" class="nav-link text-white">
-								<svg class="bi d-block mx-auto mb-1" width="24" height="24">
-									<use xlink:href="#table"></use>
-								</svg>
+								<i class="fas fa-clipboard bi d-block mx-auto mb-2 nav-size"></i>
 								Trabajos
 							</a>
 						</li>

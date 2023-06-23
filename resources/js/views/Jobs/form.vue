@@ -91,29 +91,29 @@ export default defineComponent({
 					<div class="col-md-12">
 						<div class="form-group">
 							<label class="control-label">Titulo</label>
-							<el-input v-model="form.titulo"></el-input>
+							<el-input size="large" v-model="form.titulo"></el-input>
 							<small class="text-danger" v-if="errors.titulo" v-text="errors.titulo[0]"></small>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
 							<label class="control-label">Descripción</label>
-							<el-input v-model="form.descripcion"></el-input>
+							<el-input type="textarea" :rows="4" placeholder="Ingrese su texto aquí" v-model="form.descripcion"></el-input>
 							<small class="text-danger" v-if="errors.descripcion" v-text="errors.descripcion[0]"></small>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
 							<label class="control-label">Sueldo</label>
-							<el-input type="number" v-model="form.sueldo" />
+							<el-input size="large" type="number" v-model="form.sueldo" />
 							<small class="text-danger" v-if="errors.sueldo" v-text="errors.sueldo[0]"></small>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="form-actions text-right mt-4">
-				<el-button @click.prevent="close">Cancelar</el-button>
-				<el-button type="primary" native-type="submit">Guardar</el-button>
+				<el-button size="large" @click.prevent="close">Cancelar</el-button>
+				<el-button size="large" type="primary" native-type="submit">Guardar</el-button>
 			</div>
 		</form>
 	</el-dialog>

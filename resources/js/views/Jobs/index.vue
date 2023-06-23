@@ -71,10 +71,10 @@ export default defineComponent({
 					<td class="text-left p-0">{{ row.sueldo }}</td>
 					<td class="text-center">
 						<a class="btn btn-sm btn-primary mx-2" @click.prevent="clickCreate(row.id)">
-							<i class="fa fa-pencil i-icon text-info"></i> Editar
+							<i class="fa fa-pencil i-icon text-white"></i>
 						</a>
 						<a class="btn btn-sm btn-danger" @click.prevent="clickDelete(row.id)">
-							<i class="fa fa-pencil i-icon text-info"></i> Eliminar
+							<i class="fa fa-trash i-icon text-white"></i>
 						</a>
 					</td>
 				</tr>

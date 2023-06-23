@@ -1,6 +1,7 @@
 import "./bootstrap";
 import "../css/app.css";
 
+import '@fortawesome/fontawesome-free/css/all.css';
 import { createApp, defineAsyncComponent } from "vue";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
